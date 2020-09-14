@@ -34,9 +34,9 @@ for file in neg_test_raw_folder.iterdir():
 
 #Best params from GridSearchCV (notebook):
 word_occur = True
-use_idf = False
-min_df=0.001
-max_df=0.9
+use_idf = True
+min_df = 0.001
+max_df = 0.9
 ngram_range = (1, 2)
 
 pipe = Pipeline([
